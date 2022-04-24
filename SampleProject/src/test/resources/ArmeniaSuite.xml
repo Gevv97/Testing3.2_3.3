@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Armenia Suite" parallel="tests">
+  <listeners>
+    <listener class-name="com.armeniafly.listener.MyITestListener"></listener>
+  </listeners>
+  <parameter name="appUrl" value="https://armeniafly.com/en"/>
+  <test  name="Search Flight Test">
+    <classes>
+      <class name="com.armeniafly.tests.SearchFlightTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="Book Flight Test">
+    <classes>
+      <class name="com.armeniafly.tests.BookFlightTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
